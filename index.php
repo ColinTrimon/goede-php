@@ -19,7 +19,7 @@
 
     $date = date("H");
 
-    if ($date < 05) {
+    if ($date < 5) {
       echo "<p>goodnightSweetheart!</p>";
       echo '<body background="backgrounds/night.png">';
     }
@@ -31,7 +31,7 @@
       echo "<p>goodafternoon Sweetheart!</p>";
       echo '<body background="backgrounds/afternoon.png">';
     }
-    elseif($date < 23) {
+    else{
       echo "<p>goodevening Sweetheart!</p>";
       echo '<body background="backgrounds/evening.png">';
     }
