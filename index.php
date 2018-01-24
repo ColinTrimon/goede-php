@@ -15,24 +15,24 @@
       $sec = "1";
       header("Refresh: $sec; url=$page");
 
-    echo "Currently it is:<br>". date("H:i:sa <br>");
+    echo "<p id='currently'>Currently it is:</p>". date("H:i:sa <br>");
 
     $date = date("H");
 
     if ($date < 5) {
-      echo "<p>goodnightSweetheart!</p>";
+      echo "<p>GoodnightSweetheart!</p>";
       echo '<body background="backgrounds/night.png">';
     }
     elseif($date < 12) {
-      echo "<p>goodmorning Sweetheart!</p>";
+      echo "<p>Goodmorning Sweetheart!</p>";
       echo '<body background="backgrounds/morning.png">';
     }
     elseif ($date < 18) {
-      echo "<p>goodafternoon Sweetheart!</p>";
+      echo "<p>Goodafternoon Sweetheart!</p>";
       echo '<body background="backgrounds/afternoon.png">';
     }
     else{
-      echo "<p>goodevening Sweetheart!</p>";
+      echo "<p>Goodevening Sweetheart!</p>";
       echo '<body background="backgrounds/evening.png">';
     }
     ?>
