@@ -16,3 +16,32 @@ body{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 25px;
 }
+
+#ufo{
+  position: relative;
+  height: 65px;
+  animation-duration: 4s;
+  animation-direction: alternate-reverse;
+  animation-name: alien;
+  animation-iteration-count: infinite;
+}
+
+#plane{
+  position: relative;
+  height: 65px;
+  animation-duration: 8s;
+  animation-direction: normal;
+  animation-name: vliegtuig;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vliegtuig {
+  0% {right: 650px; top:400px;}
+  100% {right: -650px; top:-400px;}
+}
+
+@keyframes alien {
+  0% {right:650px; top: 0px;}
+  50% {right:0px; top:250px;}
+  100% {right:-650px; top: 0px;}
+}
